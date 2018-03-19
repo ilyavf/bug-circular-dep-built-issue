@@ -8,6 +8,9 @@
 
     <h1>{{message}}</h1>
 
+    <p>app amount = {{amount}}</p>
+    <p>app portfolio balance = {{balance}}</p>
+
     {{#switch env.NODE_ENV}}
       {{#case "production"}}
         <script src="{{joinBase 'steal.production.js'}}"></script>
